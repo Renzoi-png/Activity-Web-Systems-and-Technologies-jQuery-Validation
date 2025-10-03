@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resonator Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+</head>
+<body class="d-flex align-items-center justify-content-center vh-100 wuw-bg">
+    <div class="auth-card p-4">
+        <h2 class="text-center mb-4">Resonator Registration</h2>
+        <form id="registerForm">
+            <div class="mb-3">
+                <input type="text" id="name" name="name" class="form-control form-control-lg" placeholder="Resonator Name">
+            </div>
+            <div class="mb-3">
+                <input type="text" id="username" name="username" class="form-control form-control-lg" placeholder="Codename">
+            </div>
+            <div class="mb-3">
+                <input type="email" id="email" name="email" class="form-control form-control-lg" placeholder="Email">
+            </div>
+            <div class="mb-3">
+                <input type="password" id="password" name="password" class="form-control form-control-lg" placeholder="Password">
+            </div>
+            <div class="mb-3">
+                <input type="password" id="confirm_password" name="confirm_password" class="form-control form-control-lg" placeholder="Confirm Password">
+            </div>
+            <button type="submit" class="btn btn-success w-100 btn-lg">Register</button>
+        </form>
+        <p class="text-center mt-3">Already registered? <a href="index.html">Resonator Login</a></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

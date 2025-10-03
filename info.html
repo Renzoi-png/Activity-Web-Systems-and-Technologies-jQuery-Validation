@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resonator Info</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body class="d-flex flex-column align-items-center justify-content-center vh-100 info-bg">
+    <div class="info-box text-center p-5">
+        <h2>Resonator Profile</h2>
+        <p><strong>Name:</strong> <span id="resName"></span></p>
+        <p><strong>Codename:</strong> <span id="resCodename"></span></p>
+        <p><strong>Email:</strong> <span id="resEmail"></span></p>
+        <a href="landing.html" class="btn btn-secondary mt-3">Back</a>
+    </div>
+    <script>
+        const name = localStorage.getItem("name");
+        const username = localStorage.getItem("username");
+        const email = localStorage.getItem("email");
+
+        if (!username) {
+            window.location.href = "index.html";
+        } else {
+            document.getElementById("resName").textContent = name;
+            document.getElementById("resCodename").textContent = username;
+            document.getElementById("resEmail").textContent = email;
+        }
+    </script>
+</body>
+</html>
